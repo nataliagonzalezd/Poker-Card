@@ -3,27 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Poker Card</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="styles" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid">
+      <div class="card">
+        <div class="topIcon"></div>
+        <div class="number"></div>
+        <div class="bottomIcon"></div>
       </div>
     </div>
+    <button class="btn btn-secondary mb-4">New Card</button>
+    <div class="input-group input-group-sm mb-3 w-25">
+      <span class="input-group-text" id="inputGroup-sizing-sm">width</span>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        id="wd"
+      />
+    </div>
+    <div class="input-group input-group-sm mb-3 w-25">
+      <span class="input-group-text" id="inputGroup-sizing-sm">height</span>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        id="ht"
+      />
+    </div>
+    <button id="change" class="btn btn-secondary mb-4">Set Card Size</button>
+    <script src="./app.js"></script>
   </body>
 </html>
